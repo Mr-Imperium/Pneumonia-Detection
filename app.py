@@ -15,7 +15,7 @@ st.set_page_config(
 # Load the pre-trained model
 @st.cache_resource
 def load_pneumonia_model():
-    model = load_model('saved_models/pneumonia_cnn_model.h5')
+    model = load_model('pneumonia_cnn_model.h5')
     return model
 
 # Preprocess the image
